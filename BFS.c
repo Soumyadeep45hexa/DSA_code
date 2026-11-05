@@ -9,6 +9,7 @@ int queue[MAX], front = 0, rear = 0;
 
 void bfs(int start, int n) {
     visited[start] = 1;
+    dis[start]=0;
     queue[rear++] = start;               // put start into the queue
 
     while (front < rear) {
@@ -18,11 +19,12 @@ void bfs(int start, int n) {
         for (int i = 0; i < n; i++) {    // look at all neighbours of v
             if (adj[v][i] && !visited[i]) {
                 visited[i] = 1;          // mark when added, so it is never added twice
+             
                 queue[rear++] = i;
             }
         }
     }
-    printf("\n");
+    return -1;
 }
 
 int main() {
