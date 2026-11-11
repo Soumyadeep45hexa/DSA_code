@@ -1,0 +1,5 @@
+Rajasthan 4.5
+Delhi 12.4
+Kolkata 56.6
+Bihar 23.7
+Gujrata 34.89

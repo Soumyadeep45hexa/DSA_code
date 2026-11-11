@@ -1,0 +1,4 @@
+Name of the Higest rainfall city: Kolkata	 Rainfall measured: 56.60cm
+
+Name of the Lowest rainfall city: Rajasthan	 Rainfall measured: 4.50cm
+
