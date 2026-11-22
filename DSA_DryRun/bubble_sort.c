@@ -15,6 +15,7 @@ void bubble(int arr[],int n){
     return ;
     }
 }
+
 int main(){
     int n,arr[10];
     printf("Enter the number of elements : ");
