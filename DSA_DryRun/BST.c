@@ -13,14 +13,14 @@ struct node *newNode(struct node *root,int x){
 struct node *insert(struct node *root,int x){
     if(root==NULL) return newNode(root,x);
     if(x>root->data) root->right=insert(root->right,x);
-    else if  (x<root->data) root->left=insert(root->left,x);
+    else if (x<root->data) root->left=insert(root->left,x);
     else printf("The key is already present\n");
     return root;
 }
 struct node *create(){
    struct node *root=NULL;
     int key,n;
-    printf("Enter the numnber of key need to be entered: ");
+    printf("Enter the number of key need to be entered: ");
     scanf("%d",&n);
     printf("Enter %d elements: \n",n);
     for (int i=0;i<n;i++){
