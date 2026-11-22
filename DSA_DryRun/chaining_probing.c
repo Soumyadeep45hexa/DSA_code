@@ -41,6 +41,21 @@ void delete(){
     printf("The key is not present\n");
       
 }
+void search(){
+    int key;
+    printf("Enter the key to be searched: ");
+    scanf("%d",&key);
+    int index=key%Size;
+    struct node *p=table[index];
+    while(p!=NULL){
+        if (p->data==key){
+            printf("The key %d is present in index %d",key,index);
+            return;
+            p=p->next;
+        }
+    }
+        printf("The key %d is not present",key);
+}
 int main() {
     int n, key;
     printf("How many keys? ");
@@ -53,5 +68,6 @@ int main() {
 
     delete();
     display();
+    search();
     return 0;
 }
